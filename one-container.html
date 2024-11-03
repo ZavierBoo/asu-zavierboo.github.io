@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>One-Container Project</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        /* Basic Styles */
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container */
+        .container {
+            width: 800px;
+            position: relative;
+            background-color: #E2C800;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            color: #000;
+        }
+
+        /* Image */
+        #siggy-picture {
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 160px;
+            width: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #000;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 100px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        a button {
+            background-color: #000000;
+            width: 140px;
+            height: 50px;
+            border-radius: 25px;
+            color: #FFFFFF;
+            font-family: "Playfair Display", serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: lowercase;
+            border: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hover effect */
+        a:hover button {
+            background-color: #E2C800;
+            color: #000000;
+            font-weight: 700;
+            border: 1px solid #000;
+        }
+
+        /* Header */
+        #siggy {
+            margin-top: 60px;
+            font-size: 48px;
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 36px;
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+            margin: 20px 0 10px;
+        }
+
+        /* Sections */
+        .content-section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            color: #333;
+        }
+
+        /* First letter styling */
+        .content-section p::first-letter {
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            font-weight: 800;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="container">
+        <img src="https://via.placeholder.com/160" id="siggy-picture" alt="Placeholder image">
+
+        <!-- Navigation -->
+        <nav id="navigation">
+            <a href="#about"><button>About</button></a>
+            <a href="#why"><button>Why</button></a>
+            <a href="#contact"><button>Contact</button></a>
+        </nav>
+
+        <!-- Header -->
+        <header id="siggy">One-Container Project</header>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-heading">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis vitae ultricies viverra. Donec accumsan, sapien ut tincidunt feugiat, sapien lectus dignissim nunc, a blandit urna lacus nec ligula.</p>
+        </section>
+
+        <!-- Why Section -->
+        <section id="why" class="content-section">
+            <h2 class="section-heading">Why</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet feugiat quam. Phasellus volutpat vestibulum ante, sit amet dictum nisi efficitur id.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2 class="section-heading">Contact</h2>
+            <p>Feel free to reach out via email or follow us on social media for more updates and information.</p>
+        </section>
+    </section>
+
+</body>
+
+</html>
