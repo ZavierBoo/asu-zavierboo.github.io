@@ -1,140 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>About Zavier Booker</title>
+    <title>Zavier Booker</title>
     <style>
-        /* Import Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-        /* Basic Styles */
+        /* Basic body styling */
         body {
             background-color: #000000;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: "Playfair Display", serif;
+            color: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            margin: 0;
         }
 
-        /* Container */
+        /* Main container */
         .container {
-            width: 800px;
             position: relative;
+            width: 700px;
             background-color: #E2C800;
-            border-radius: 20px;
+            border-radius: 41px;
+            color: black;
+            margin: auto;
             padding: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            color: #000;
         }
 
-        /* Image */
-        #profile-picture {
-            position: absolute;
-            top: -80px;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 160px;
-            width: 160px;
-            object-fit: cover;
+        /* Basketball image styling */
+        #basketball-picture {
+            height: 300px;
+            width: 300px;
             border-radius: 50%;
-            border: 4px solid #000;
+            display: block;
+            margin: 20px auto;
+            object-fit: cover;
         }
 
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 100px;
-        }
-
-        nav a {
-            text-decoration: none;
+        /* Navigation styling */
+        .content>nav {
+            background-color: #E2C800;
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         a button {
-            background-color: #000000;
-            width: 140px;
-            height: 50px;
+            background-color: #8482da;
+            width: 183px;
+            height: 87px;
             border-radius: 25px;
-            color: #FFFFFF;
-            font-family: "Playfair Display", serif;
-            font-size: 18px;
-            font-weight: 400;
-            text-transform: lowercase;
+            text-align: center;
             border: none;
-            transition: background-color 0.3s, color 0.3s;
+            color: black;
+            font-family: "Playfair Display", serif;
+            font-size: 25px;
+            font-weight: 400;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 5px;
         }
 
-        /* Hover effect */
+        /* Hover effect for buttons */
         a:hover button {
             background-color: #E2C800;
-            color: #000000;
-            font-weight: 700;
-            border: 1px solid #000;
+            color: black;
+            font-weight: 800;
+            letter-spacing: 2px;
         }
 
-        /* Header */
-        #about-heading {
-            margin-top: 60px;
-            font-size: 48px;
+        /* About Section */
+        #about {
+            margin-top: 20px;
+        }
+
+        header h1 {
             font-family: "Playfair Display", serif;
-            font-weight: 800;
+            font-size: 36px;
+            color: #2e1128;
             text-align: center;
         }
 
-        /* Section Headings */
-        .section-heading {
-            font-size: 36px;
-            font-family: "Playfair Display", serif;
-            font-weight: 800;
-            margin: 20px 0 10px;
+        /* About me text */
+        #about h2 {
+            font-size: 18px;
+            color: black;
+            text-align: justify;
         }
 
-        /* About Me Section */
-        .content-section {
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            color: #333;
-        }
-
-        /* First letter styling */
-        .content-section p::first-letter {
-            font-family: "Playfair Display", serif;
-            font-size: 40px;
-            font-weight: 800;
-            color: #000;
+        /* First-letter styling */
+        #about::first-letter {
+            font-size: 30px;
+            font-weight: 700;
+            font-style: oblique;
+            color: #2e1128;
         }
     </style>
 </head>
 
 <body>
-
     <section class="container">
-        <!-- Basketball image as profile picture -->
-        <img src="https://via.placeholder.com/160?text=Basketball" id="profile-picture" alt="Basketball">
+        <!-- Basketball Image -->
+        <img src="https://via.placeholder.com/300?text=Basketball" id="basketball-picture" alt="Basketball">
 
-        <!-- Navigation -->
-        <nav id="navigation">
-            <a href="#about"><button>About Me</button></a>
-        </nav>
+        <section class="content">
+            <header>
+                <h1>About Me!</h1>
+            </header>
 
-        <!-- Header -->
-        <header id="about-heading">About Zavier Booker</header>
+            <!-- Navigation for About, Why, and Contact buttons only -->
+            <nav id="navigation">
+                <a href="#about"><button>About</button></a>
+                <a href="#why"><button>Why</button></a>
+                <a href="#contact"><button>Contact</button></a>
+            </nav>
 
-        <!-- About Me Section -->
-        <section id="about" class="content-section">
-            <h2 class="section-heading">About Me</h2>
-            <p>Hey there! My name is Zavier Booker. I'm currently a computer science student, diving into the world of coding, problem-solving, and building tech projects. My studies focus on everything from developing efficient algorithms to designing dynamic web pages like this one.</p>
-            
-            <p>Outside of my coursework, I enjoy exploring various aspects of technology and innovation, from data science to web development. In my free time, you might find me working on side projects, collaborating with peers, or deepening my understanding of how technology shapes our world.</p>
+            <!-- About Section -->
+            <section id="about">
+                <h2>
+                    Hello! My name is Zavier Booker, and I'm a dedicated computer science student with a passion for problem-solving and coding.
+                    I specialize in algorithms, web development, and working on software projects that demonstrate the power of technology in our world.
+                    Outside of academics, I’m always eager to build new tech projects, learn the latest in the field, and collaborate with peers to create innovative solutions.
+                </h2>
+            </section>
         </section>
     </section>
-
 </body>
 
 </html>
